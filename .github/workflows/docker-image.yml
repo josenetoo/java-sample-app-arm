@@ -46,7 +46,7 @@ jobs:
           push: true
           tags: ord.ocir.io/axwzmfasnsij/javademodev:${{ github.sha }}
           platforms: linux/arm64
-      # Substituir o marcador IMAGE_TAG pelo SHA do commit e aplicar o manifesto Kubernetes
+
       - name: Deploy to Kubernetes
         env:
           IMAGE_TAG: ${{ github.sha }}
