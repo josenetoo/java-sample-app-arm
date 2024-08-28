@@ -27,7 +27,7 @@ jobs:
           password: ${{ secrets.OCI_PASSWORD }}
 
       # Construir e empurrar a imagem Docker para ARM64
-      - name: Build and Push ARM64 Docker Image
+      - name: Build and Push ARM64 Docker Image OCI
         uses: docker/build-push-action@v3
         with:
           context: .
