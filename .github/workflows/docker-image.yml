@@ -3,7 +3,7 @@ name: Build and Push ARM64 Docker Image to OCI
 on:
   push:
     branches:
-      - main  # Defina o branch para acionar o workflow
+      - main  
 
 jobs:
   build:
