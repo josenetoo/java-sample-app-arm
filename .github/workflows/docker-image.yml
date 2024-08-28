@@ -1,4 +1,4 @@
-name: Build and Push ARM64 Docker Image to OCI
+  name: Build and Push ARM64 Docker Image to OCI
 
 on:
   push:
@@ -26,13 +26,13 @@ jobs:
           username: ${{ secrets.OCI_USERNAME }}
           password: ${{ secrets.OCI_PASSWORD }}
 
-      # Configurar o JDK
+      # Configurar o JDK 17 com Temurin
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
           java-version: '17'
-          distribution: 'adopt-openjdk'
-
+          distribution: 'temurin'
+          
       # Construir o projeto Java com Maven
       - name: Build Java project with Maven
         run: mvn -Pnative -DskipTests package
