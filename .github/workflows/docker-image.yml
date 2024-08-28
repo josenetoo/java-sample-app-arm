@@ -13,8 +13,8 @@ jobs:
       # Checar o código-fonte do repositório
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Usa o PAT para autenticação
+        # with:
+        #   token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Usa o PAT para autenticação
 
       # Configurar o Docker Buildx
       - name: Set up Docker Buildx
