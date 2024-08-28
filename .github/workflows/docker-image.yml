@@ -22,7 +22,7 @@ jobs:
       - name: Login to OCI Container Registry
         uses: docker/login-action@v2
         with:
-          registry: <your-oci-region>.ocir.io
+          registry: ord.ocir.io
           username: ${{ secrets.OCI_USERNAME }}
           password: ${{ secrets.OCI_PASSWORD }}
 
