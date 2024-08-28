@@ -1,4 +1,4 @@
-  name: Build and Push ARM64 Docker Image to OCI
+name: Build and Push ARM64 Docker Image to OCI
 
 on:
   push:
@@ -38,7 +38,7 @@ jobs:
         run: mvn -Pnative -DskipTests package
 
       # Construir e empurrar a imagem Docker para ARM64
-      - name: Build and Push ARM64 Docker Image OCI
+      - name: Build and Push ARM64 Docker Image
         uses: docker/build-push-action@v3
         with:
           context: .
