@@ -1,1 +1,1 @@
-# java-sample-oci-devops-app
+# java-sample-app-arm
