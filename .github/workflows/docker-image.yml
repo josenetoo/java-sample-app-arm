@@ -42,7 +42,7 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: ord.ocir.io/axwzmfasnsij/javademodev:${{ github.sha }}
+          tags: ord.ocir.io/idi1o0a010nx/javademodevops:${{ github.sha }}
           platforms: linux/arm64
 
       - name: Update k8s Manifest
