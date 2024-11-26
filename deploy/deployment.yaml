@@ -15,7 +15,7 @@ spec:
       containers:
         - name: java-app
           # enter the path to your image, be sure to include the correct region prefix
-          image: vcp.ocir.io/idi1o0a010nx/demo/javadevops:364dcf071213fd31458d1c3a3e870148880e877a
+          image: vcp.ocir.io/idi1o0a010nx/demo/javadevops:eb16839bd66744a7f3f0f749c78df86ba21e78f2
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
