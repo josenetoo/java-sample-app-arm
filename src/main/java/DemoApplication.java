@@ -11,7 +11,7 @@ public class DemoApplication {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello from Infox!! Oracle DevOps Day v2!!";
+        return "Hello from Infox!! Oracle DevOps Day v1!!";
     }
 
     public static void main(String[] args) {
